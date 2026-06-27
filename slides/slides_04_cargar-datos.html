@@ -481,7 +481,7 @@
 <style type="text/css">kbd.kbd {
 }
 </style><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.31">
+  <meta name="generator" content="quarto-1.7.32">
 
   <title>Descargar, importar (y exportar) datos con R</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -634,6 +634,23 @@ color: #5ebccf;
 }
 a:hover {
 color: #50a0b0; 
+}
+
+.code-annotation-container-grid {
+font-size: 0.75em !important; 
+margin-top: 1.8em !important; 
+margin-left: 1.1em !important; 
+line-height: 1.7; 
+}
+
+.code-annotation-container-grid dl {
+display: grid;
+row-gap: 1.2em; 
+}
+
+a.code-annotation-anchor {
+font-size: 0.8em !important;
+opacity: 0.8;
 }
 </style>
   <style type="text/css">.reveal
@@ -1165,7 +1182,7 @@ datos con R</h1>
 <li><p>Depende de donde estén, pero lo normal es que los datos se descarguen <strong>pinchando en un enlace</strong>.</p></li>
 <li><p>Por ejemplo, en la siguiente ruta hay un fichero de datos en formato <code>.xlsx</code>:<br>
 <a href="https://www.ine.es/daco/daco42/codmun/codmun20/20codmun.xlsx" class="uri">https://www.ine.es/daco/daco42/codmun/codmun20/20codmun.xlsx</a></p></li>
-<li><p>¿Donde se descargarán esos datos?</p></li>
+<li><p>¿Donde se descargarán esos datos?     <span class="fragment">Habitualmente <u>en “Descargas”</u></span></p></li>
 </ul>
 </div>
 <p><br></p>
@@ -1175,9 +1192,27 @@ datos con R</h1>
 </div>
 <div class="small">
 <ul>
-<li><p>Usando código</p></li>
-<li><p>Al principio es un poco más complicado, pero <strong>tiene ventajas</strong>, y además estamos aprendiendo R</p></li>
-<li><p>Veámoslo con un <u>ejemplo</u></p></li>
+<li>Se puede por menús, pero lo haremos … <span class="fragment"><strong>usando código</strong></span></li>
+</ul>
+</div>
+<div class="small fragment">
+<ul>
+<li>Al principio es un poco más complicado, pero <strong>tiene ventajas</strong>, y además estamos aprendiendo R</li>
+</ul>
+</div>
+</div>
+<div class="fragment">
+<div class="centradisimo small">
+<p><span class="violetita"><span class="small">al usar R</span>, ¿donde se descargarán los datos?</span></p>
+</div>
+<div class="small">
+<ul>
+<li>Acuérdate que trabajamos con Rprojects     <span class="fragment"><u>en el directorio de trabajo</u></span>   <span class="fragment"><span class="small">; osea,</span> en la propia carpeta del proyecto</span></li>
+</ul>
+</div>
+<div class="fragment small">
+<ul>
+<li>Veámoslo con un <u>ejemplo</u></li>
 </ul>
 </div>
 </div>
@@ -1249,7 +1284,7 @@ datos con R</h1>
 <li>Vamos a ser organizados y guardar los datos en uns subcarpeta que llamaremos “pruebas”</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="annotated-cell-40"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-40" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-40-1" class="code-annotation-target"><a href="#annotated-cell-40-1"></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://raw.githubusercontent.com/perezp44/archivos_download/refs/heads/master/plazas_turisticas.csv&quot;</span></span>
+<div class="sourceCode cell-code" id="annotated-cell-40" data-code-line-numbers="|1|2"><pre class="sourceCode numberSource r code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode r"><a class="code-annotation-anchor" data-target-cell="annotated-cell-40" data-target-annotation="1" onclick="event.preventDefault();" href>1</a><span id="annotated-cell-40-1" class="code-annotation-target"><a href="#annotated-cell-40-1"></a>my_url <span class="ot">&lt;-</span> <span class="st">&quot;https://raw.githubusercontent.com/perezp44/archivos_download/refs/heads/master/plazas_turisticas.csv&quot;</span></span>
 <span id="annotated-cell-40-2"><a href="#annotated-cell-40-2"></a></span>
 <a class="code-annotation-anchor" data-target-cell="annotated-cell-40" data-target-annotation="2" onclick="event.preventDefault();" href>2</a><span id="annotated-cell-40-3" class="code-annotation-target"><a href="#annotated-cell-40-3"></a>fs<span class="sc">::</span><span class="fu">dir_create</span>(<span class="st">&quot;pruebas&quot;</span>)</span>
 <span id="annotated-cell-40-4"><a href="#annotated-cell-40-4"></a></span>
@@ -2393,7 +2428,7 @@ datos con R</h1>
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href></a><span class="fu">names</span>(<span class="fu">attributes</span>(iris_2))</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;class&quot;     &quot;row.names&quot; &quot;names&quot;    </code></pre>
+<pre><code>[1] &quot;names&quot;     &quot;row.names&quot; &quot;class&quot;    </code></pre>
 </div>
 </div></div>
 </div>
