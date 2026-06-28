@@ -32,6 +32,9 @@ Durante "mis 4 sesiones" del curso utilizaremos, en clase, las siguientes **slid
 
 - [Tidyverse: Introducción a Quarto](/slides/slides_07b_intro-a-Quarto.html){target="_blank"}
 
+<br>
+
+Puedes descargar todas las slides desde [aquí](./materiales/slides_pjp_all.zip){target="_blank"}
 
 
 <br>
