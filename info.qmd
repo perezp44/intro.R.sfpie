@@ -157,7 +157,7 @@ Lo que hay en esta sección [no tienes porqué ejecutarlo]{.underline}, **es só
 
 ```bash
 R --version         #- 4.6
-rstudio --version   #- 2026.04quarto --version
+rstudio --version   #- 2026.04
 quarto --version    #- 1.9
 ```
 
